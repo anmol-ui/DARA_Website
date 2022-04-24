@@ -75,3 +75,54 @@ body{
 #products .catalogue{
   margin-top: 3%;
 }
+#products h5 a{
+  text-decoration: none;
+}
+.mb-3{
+  margin-top: 1.7rem;
+}
+.txt-center {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.rating {
+    text-align: center;
+    padding-right: 40%;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
