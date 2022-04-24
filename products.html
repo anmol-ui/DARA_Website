@@ -96,9 +96,94 @@
                 Category name
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product name</h5>
+                <!-- Button trigger modal -->
+                <h5 class="card-title"><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Product name</a></h5>
                 <p class="card-text">Product description. Lorem Ipsum</p>
                 <button href="" class="btn btn-primary">ADD TO CART</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Reviews</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table">
+                          <thead class="">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Rating</th>
+                              <th scope="col">Day</th>
+                              <th scope="col">Month</th>
+                              <th scope="col">Year</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Name1 from db</td>
+                              <td>4</td>
+                              <td>26</td>
+                              <td>12</td>
+                              <td>2016</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Name2 from db</td>
+                              <td>3</td>
+                              <td>21</td>
+                              <td>10</td>
+                              <td>1996</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Name3 from db</td>
+                              <td>1</td>
+                              <td>25</td>
+                              <td>3</td>
+                              <td>2012</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <form>
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input class="form-control" type="text" value="Bonny" readonly>
+                          </div>
+                          <div class="rating-div mb-3">
+                            <div class="rating">
+                              <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                              <label for="star5"><i class="far fa-star"></i></label>
+                              <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+                              <label for="star4"><i class="far fa-star"></i></label>
+                              <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+                              <label for="star3"><i class="far fa-star"></i></label>
+                              <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+                              <label for="star2"><i class="far fa-star"></i></label>
+                              <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+                              <label for="star1"><i class="far fa-star"></i></label>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div class="mb-3 form-check">
+                            <label class="form-check-label" for="exampleCheck1">Date : </label>
+                            <input type="date" id="start" name="trip-start" value="2022-04-23" min="2022-04-20" max="2022-04-24">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Give Review</button>
+                        </form>
+
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="card-footer text-muted">
                 Price
@@ -113,9 +198,67 @@
                 Category name
               </div>
               <div class="card-body">
-                <h5 class="card-title">Product name</h5>
+                <!-- Button trigger modal -->
+                <h5 class="card-title"><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Product name</a></h5>
                 <p class="card-text">Product description. Lorem Ipsum</p>
                 <button href="" class="btn btn-primary">ADD TO CART</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Reviews</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table">
+                          <thead class="">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Rating</th>
+                              <th scope="col">Day</th>
+                              <th scope="col">Month</th>
+                              <th scope="col">Year</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Name1 from db</td>
+                              <td>4</td>
+                              <td>26</td>
+                              <td>12</td>
+                              <td>2016</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Name2 from db</td>
+                              <td>3</td>
+                              <td>21</td>
+                              <td>10</td>
+                              <td>1996</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Name3 from db</td>
+                              <td>1</td>
+                              <td>25</td>
+                              <td>3</td>
+                              <td>2012</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Give Review</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="card-footer text-muted">
                 Price
